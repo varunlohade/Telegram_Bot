@@ -10,7 +10,7 @@ def countdown(t):
         t -= 1
       
 def send_msg(text):
-    token = '5306724066:AAE-OmhkRlc6niAB2wzF52wIHlfxn5Jpj6k'
+    token = 'token_telegram'
     chat_id = '-1001640811578'
     url_req = f'https://api.telegram.org/bot{token}/sendMessage' +'?chat_id='+chat_id+'&text='+text
     results = requests.get(url_req)
